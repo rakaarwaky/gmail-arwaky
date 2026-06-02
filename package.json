@@ -1,11 +1,11 @@
 {
-  "name": "@gongrzhe/server-gmail-autoauth-mcp",
+  "name": "gmail-arwaky",
   "version": "1.1.15",
   "description": "Gmail MCP server with auto authentication support",
   "type": "module",
   "main": "dist/index.js",
   "bin": {
-    "gmail-mcp": "./dist/index.js"
+    "gmail-arwaky": "./dist/index.js"
   },
   "scripts": {
     "build": "tsc",
@@ -29,16 +29,16 @@
     "claude",
     "auto-auth"
   ],
-  "author": "gongrzhe",
+  "author": "rakaarwaky <arwaky90@gmail.com>",
   "license": "ISC",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/gongrzhe/server-gmail-autoauth-mcp.git"
+    "url": "git+https://github.com/rakaarwaky/gmail-arwaky.git"
   },
   "bugs": {
-    "url": "https://github.com/gongrzhe/server-gmail-autoauth-mcp/issues"
+    "url": "https://github.com/rakaarwaky/gmail-arwaky/issues"
   },
-  "homepage": "https://github.com/gongrzhe/server-gmail-autoauth-mcp#readme",
+  "homepage": "https://github.com/rakaarwaky/gmail-arwaky#readme",
   "publishConfig": {
     "access": "public"
   },

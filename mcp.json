@@ -3,7 +3,7 @@
     "gmail": {
       "command": "node",
       "args": [
-        "/home/raka/mcp-servers/gmail-mcp/dist/index.js"
+        "/home/raka/mcp-arwaky/gmail-arwaky/dist/index.js"
       ]
     }
   }

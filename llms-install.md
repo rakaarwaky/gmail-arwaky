@@ -27,8 +27,8 @@ This guide will help you install and configure the Gmail AutoAuth MCP server for
 
 2. Set up the configuration directory:
    ```bash
-   mkdir -p ~/.gmail-mcp
-   mv gcp-oauth.keys.json ~/.gmail-mcp/
+   mkdir -p ~/.gmail-arwaky
+   mv gcp-oauth.keys.json ~/.gmail-arwaky/
    ```
 
 3. Run authentication:
@@ -36,10 +36,10 @@ This guide will help you install and configure the Gmail AutoAuth MCP server for
    npx @gongrzhe/server-gmail-autoauth-mcp auth
    ```
    This will:
-   - Look for gcp-oauth.keys.json in current directory or ~/.gmail-mcp/
-   - Copy it to ~/.gmail-mcp/ if found in current directory
+   - Look for gcp-oauth.keys.json in current directory or ~/.gmail-arwaky/
+   - Copy it to ~/.gmail-arwaky/ if found in current directory
    - Launch browser for Google authentication
-   - Save credentials as ~/.gmail-mcp/credentials.json
+   - Save credentials as ~/.gmail-arwaky/credentials.json
 
 4. Configure Claude Desktop by adding the MCP server configuration:
    ```json
@@ -70,13 +70,13 @@ If you encounter any issues during installation:
    - Check port 3000 is available during authentication
 
 3. Configuration Issues:
-   - Verify ~/.gmail-mcp directory exists and has correct permissions
+   - Verify ~/.gmail-arwaky directory exists and has correct permissions
    - Check credentials.json was created after authentication
    - Ensure Claude Desktop configuration is properly formatted
 
 ## Security Notes
 
-- Store OAuth credentials securely in ~/.gmail-mcp/
+- Store OAuth credentials securely in ~/.gmail-arwaky/
 - Never commit credentials to version control
 - Use proper file permissions for config directory
 - Regularly review access in Google Account settings

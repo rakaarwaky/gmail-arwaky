@@ -61,9 +61,9 @@ npx -y @smithery/cli install @gongrzhe/server-gmail-autoauth-mcp --client claude
 
    a. Global Authentication (Recommended):
    ```bash
-   # First time: Place gcp-oauth.keys.json in your home directory's .gmail-mcp folder
-   mkdir -p ~/.gmail-mcp
-   mv gcp-oauth.keys.json ~/.gmail-mcp/
+   # First time: Place gcp-oauth.keys.json in your home directory's .gmail-arwaky folder
+   mkdir -p ~/.gmail-arwaky
+   mv gcp-oauth.keys.json ~/.gmail-arwaky/
 
    # Run authentication from anywhere
    npx @gongrzhe/server-gmail-autoauth-mcp auth
@@ -77,13 +77,13 @@ npx -y @smithery/cli install @gongrzhe/server-gmail-autoauth-mcp --client claude
    ```
 
    The authentication process will:
-   - Look for `gcp-oauth.keys.json` in the current directory or `~/.gmail-mcp/`
-   - If found in current directory, copy it to `~/.gmail-mcp/`
+   - Look for `gcp-oauth.keys.json` in the current directory or `~/.gmail-arwaky/`
+   - If found in current directory, copy it to `~/.gmail-arwaky/`
    - Open your default browser for Google authentication
-   - Save credentials as `~/.gmail-mcp/credentials.json`
+   - Save credentials as `~/.gmail-arwaky/credentials.json`
 
    > **Note**: 
-   > - After successful authentication, credentials are stored globally in `~/.gmail-mcp/` and can be used from any directory
+   > - After successful authentication, credentials are stored globally in `~/.gmail-arwaky/` and can be used from any directory
    > - Both Desktop app and Web application credentials are supported
    > - For Web application credentials, make sure to add `http://localhost:3000/oauth2callback` to your authorized redirect URIs
 
@@ -691,7 +691,7 @@ The server includes efficient batch processing capabilities:
 
 ## Security Notes
 
-- OAuth credentials are stored securely in your local environment (`~/.gmail-mcp/`)
+- OAuth credentials are stored securely in your local environment (`~/.gmail-arwaky/`)
 - The server uses offline access to maintain persistent authentication
 - Never share or commit your credentials to version control
 - Regularly review and revoke unused access in your Google Account settings
@@ -701,7 +701,7 @@ The server includes efficient batch processing capabilities:
 ## Troubleshooting
 
 1. **OAuth Keys Not Found**
-   - Make sure `gcp-oauth.keys.json` is in either your current directory or `~/.gmail-mcp/`
+   - Make sure `gcp-oauth.keys.json` is in either your current directory or `~/.gmail-arwaky/`
    - Check file permissions
 
 2. **Invalid Credentials Format**
