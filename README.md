@@ -3,7 +3,7 @@
 A Model Context Protocol (MCP) server for Gmail integration in Claude Desktop with auto authentication support. This server enables AI assistants to manage Gmail through natural language interactions.
 
 ![](https://badge.mcpx.dev?type=server 'MCP Server')
-[![smithery badge](https://smithery.ai/badge/@gongrzhe/server-gmail-autoauth-mcp)](https://smithery.ai/server/@gongrzhe/server-gmail-autoauth-mcp)
+[![smithery badge](https://smithery.ai/badge/@rakaarwaky/gmail-arwaky)](https://smithery.ai/server/@rakaarwaky/gmail-arwaky)
 
 
 ## Features
@@ -32,10 +32,10 @@ A Model Context Protocol (MCP) server for Gmail integration in Claude Desktop wi
 
 ### Installing via Smithery
 
-To install Gmail AutoAuth for Claude Desktop automatically via [Smithery](https://smithery.ai/server/@gongrzhe/server-gmail-autoauth-mcp):
+To install Gmail AutoAuth for Claude Desktop automatically via [Smithery](https://smithery.ai/server/@rakaarwaky/gmail-arwaky):
 
 ```bash
-npx -y @smithery/cli install @gongrzhe/server-gmail-autoauth-mcp --client claude
+npx -y @smithery/cli install @rakaarwaky/gmail-arwaky --client claude
 ```
 
 ### Installing Manually
@@ -66,14 +66,14 @@ npx -y @smithery/cli install @gongrzhe/server-gmail-autoauth-mcp --client claude
    mv gcp-oauth.keys.json ~/.gmail-arwaky/
 
    # Run authentication from anywhere
-   npx @gongrzhe/server-gmail-autoauth-mcp auth
+   npx @rakaarwaky/gmail-arwaky auth
    ```
 
    b. Local Authentication:
    ```bash
    # Place gcp-oauth.keys.json in your current directory
    # The file will be automatically copied to global config
-   npx @gongrzhe/server-gmail-autoauth-mcp auth
+   npx @rakaarwaky/gmail-arwaky auth
    ```
 
    The authentication process will:
@@ -95,7 +95,7 @@ npx -y @smithery/cli install @gongrzhe/server-gmail-autoauth-mcp --client claude
     "gmail": {
       "command": "npx",
       "args": [
-        "@gongrzhe/server-gmail-autoauth-mcp"
+        "@rakaarwaky/gmail-arwaky"
       ]
     }
   }
@@ -143,7 +143,7 @@ docker run -i --rm \
 For cloud server environments (like n8n), you can specify a custom callback URL during authentication:
 
 ```bash
-npx @gongrzhe/server-gmail-autoauth-mcp auth https://gmail.gongrzhe.com/oauth2callback
+npx @rakaarwaky/gmail-arwaky auth https://gmail.gongrzhe.com/oauth2callback
 ```
 
 #### Setup Instructions for Cloud Environment
@@ -160,7 +160,7 @@ npx @gongrzhe/server-gmail-autoauth-mcp auth https://gmail.gongrzhe.com/oauth2ca
 
 4. **Run Authentication:**
    ```bash
-   npx @gongrzhe/server-gmail-autoauth-mcp auth https://gmail.gongrzhe.com/oauth2callback
+   npx @rakaarwaky/gmail-arwaky auth https://gmail.gongrzhe.com/oauth2callback
    ```
 
 5. **Configure in your application:**
@@ -170,7 +170,7 @@ npx @gongrzhe/server-gmail-autoauth-mcp auth https://gmail.gongrzhe.com/oauth2ca
        "gmail": {
          "command": "npx",
          "args": [
-           "@gongrzhe/server-gmail-autoauth-mcp"
+           "@rakaarwaky/gmail-arwaky"
          ]
        }
      }

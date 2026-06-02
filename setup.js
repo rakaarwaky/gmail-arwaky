@@ -40,7 +40,7 @@ try {
             console.log(`Server script path: ${serverScriptPath}`);
             
             // Create configuration directory
-            const configDir = path.join(os.homedir(), '.gmail-mcp');
+            const configDir = path.join(os.homedir(), '.gmail-arwaky');
             console.log(`Configuration directory: ${configDir}`);
             
             if (!fs.existsSync(configDir)) {

@@ -1,8 +1,8 @@
 import fs from 'fs';
 import { google } from 'googleapis';
 
-const creds = JSON.parse(fs.readFileSync('/home/raka/.gmail-mcp/credentials.json', 'utf8'));
-const keys = JSON.parse(fs.readFileSync('/home/raka/.gmail-mcp/gcp-oauth.keys.json', 'utf8'));
+const creds = JSON.parse(fs.readFileSync('/home/raka/.gmail-arwaky/credentials.json', 'utf8'));
+const keys = JSON.parse(fs.readFileSync('/home/raka/.gmail-arwaky/gcp-oauth.keys.json', 'utf8'));
 
 const oauth2Client = new google.auth.OAuth2(
   keys.installed.client_id,

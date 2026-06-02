@@ -23,7 +23,7 @@ import { createFilter, listFilters, getFilter, deleteFilter, filterTemplates, Gm
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 
 // Configuration paths
-const CONFIG_DIR = path.join(os.homedir(), '.gmail-mcp');
+const CONFIG_DIR = path.join(os.homedir(), '.gmail-arwaky');
 const OAUTH_PATH = process.env.GMAIL_OAUTH_PATH || path.join(CONFIG_DIR, 'gcp-oauth.keys.json');
 const CREDENTIALS_PATH = process.env.GMAIL_CREDENTIALS_PATH || path.join(CONFIG_DIR, 'credentials.json');
 
