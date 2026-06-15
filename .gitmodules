@@ -1,0 +1,3 @@
+[submodule "gmail-mcp"]
+	path = gmail-mcp
+	url = https://github.com/domdomegg/gmail-mcp.git
